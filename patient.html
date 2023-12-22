@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patient Profile</title>
+  <script>
+  function message(){
+   alert("it's time to do!!!");
+  }
+  </script>
+  <style>
+  .patient-profile {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.patient-profile h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.patient-details,
+.patient-conditions {
+  margin-bottom: 20px;
+}
+
+.patient-details h2,
+.patient-conditions h2 {
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="checkbox"], input[type="submit"] {
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+}
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #f8f9fa;
+  padding: 20px;
+}
+
+.header-logo {
+  display: inline-block;
+}
+
+.header-logo img {
+  width: 200px;
+  height: auto;
+}
+
+.header-navigation {
+  float: right;
+}
+
+.header-navigation ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header-navigation li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.header-navigation a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.header-navigation a:hover {
+  color: #007bff;
+}
+
+section {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+section h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+section ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+section li {
+    margin-bottom: 5px;
+}
+
+section a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+.footer {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-item {
+    margin: 0 20px;
+}
+
+.footer-item h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-item ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-item li {
+    margin-bottom: 5px;
+}
+
+.footer-item a {
+    color: #333;
+    text-decoration: none;
+}
+
+.footer-copyright {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.social-media li {
+    margin: 0 5px;
+}
+
+.social-media a {
+    color: #333;
+    font-size: 20px;
+}
+.patient-conditions a{
+  text-decoration: none;
+
+}
+.patient-conditions a:hover{
+  color: rgb(31, 31, 235);
+  padding: 30px;
+  font-size: 20px;
+  font-family: serif;
+  font-style: italic;
+}
+
+  </style>
+</head>
+<body>
+<header class="header">
+    <div class="header-logo">
+      <img src="logo.png" alt="Medical System Logo">
+    </div>
+
+    <nav class="header-navigation">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="123.html">Patient</a></li>
+        <li><a href="department.html">department</a></li>
+        <li><a href="contactfull.html">Contact us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="patient-profile">
+    <h1><div>
+        <section class="user-profile">
+            
+            <img src="d.png" alt="User Profile Image" class="profile-image">
+        </section>
+
+    <div class="patient-details">
+      <h2>Patient Details</h2>
+      <ul>
+        <li><strong>Patient ID:</strong> <span><input type="auto" name="unique" required></span></li>
+        <li><strong>National ID:</strong> <span><input type="auto" name="unique" ></span></li>
+        <li><strong>Full Name:</strong> <span><input type="full-name" name="full name"></span></li>
+        <li><strong>District:</strong> <span><input type="full-name" name="full name"></span></li>
+        <li><strong>Sector:</strong> <span><input type="full-name" name="full name"></span></li>
+        <li><strong>Date of Birth:</strong> <span><input type="check-box" name="check-box"></span></li>
+        <li><strong>Gender:</strong> <span>
+        <select option="drop up">
+        <option value="male">Male
+         <option value="female">Female
+         <option value="other">custom</select>
+        </span></li>
+        <li><strong>Contact Number:</strong> <span><input type="text" name="number"></span></li>
+        <li><strong>Email Address:</strong> <span><input type="text" name="location" placeholder="District-sector-cell-village"></span></li>
+      </ul>
+    </div>
+
+    <div class="patient-conditions">
+      <h2>Medical Conditions</h2>
+      <form>
+        <label for="aids"><select option="drop up">
+        <option value="sida">AIDS
+         <option value="dia">Diabetes
+         <option value="hyper">Hypertension
+         <option value="dia">Other
+         </select>
+          <input type="submit" value="save"><br>
+          <div class="patient-conditions"><center>
+         <a href="dptinside.html"><button onclick="message()">CONTINUE</a></button></center>
+      </form>
+      
+      <button> <a href="patient1.html">Patient history</a></button></div>
+    </div>
+  </div>
+  <hr>
+	<footer class="footer">
+        <div class="footer-content">
+            <div class="footer-item">
+                <h2>Contact us</h2>
+                <ul>
+                    <li><a href="#">Email:</a></li>
+                    <li><a href="#">Phone: +250789368709</a></li>
+                    <li><a href="#">Address:</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-item">
+                <h2>About us</h2>
+                <p>e-Healthly management Diabettes hypertensions and AIDS</p>
+            </div>
+
+            <div class="footer-item">
+                <h2>Social media</h2>
+                <ul
+ 
+class="social-media">
+
+                    
+<li><a
+ 
+href="#"><img src="face.png"><br>Facebook<i
+ 
+class="fa-brands fa-facebook"></i></a></li>
+
+                    
+<li><a
+ 
+href="#"><img src="x1.png"><br>X<i
+ 
+class="fa-brands fa-twitter"></i></a></li>
+
+                    
+<li><a
+ 
+href="#"><img src="link1.png">LinkedIn<i
+ 
+class="fa-brands fa-linkedin"></i></a></li>
+
+                
+</ul>
+
+            
+</div>
+
+        
+</div>
+
+
+        
+<div
+ 
+class="footer-copyright">
+            <p>&copy; 2023 Medical System. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

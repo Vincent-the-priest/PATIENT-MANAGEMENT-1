@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>having-drugs</title>
+  <style>
+    body{
+      background-image: url('heart1.gif');
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      border-radius: 3px;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 8px;
+      border: 1px solid #ddd;
+    }
+
+    tr:nth-child(even){background-color: #f2f2f2;}
+
+    button {
+      background-color: #04AA6D;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    button:hover {
+      background-color: #039259;
+      textarea {
+  resize: vertical;
+}
+.form-group {
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+    }
+  </style>
+</head>
+<body>
+<img src="logo.png"><center><h2>Drugs</h2></center>
+  <table id="drugsTable">
+    <thead>
+    <div class="form-group">
+        <label for="event-description">Event Description:</label>
+        <textarea id="event-description" name="event-description" rows="2" required></textarea>
+      </div>
+      <tr>
+        <th>Drug Name</th>
+        <th>Delivery Date</th>
+        <th>Quantity</th>
+        <th>Remain Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><input type="text" name="....."></td>
+        <td><input type="text" name="....."></td>
+        <td><input type="text" name="....."></td>
+        <td><input type="text" name="....."></td>
+      </tr>
+      <tr>
+        <td><input type="text" name="....."></td>
+        <td><input type="text" name="....."></td>
+        <td><input type="text" name="....."></td>
+        <td><input type="text" name="....."></td>
+      </tr>
+      <tr>
+        <td><input type="text" name="....."></td>
+        <td><input type="text" name="....."></td>
+        <td><input type="text" name="....."></td>
+        <td><input type="text" name="....."></td>
+      </tr>
+    </tbody>
+  </table>
+  <button>Add Drug</button>
+</body>
+</html>

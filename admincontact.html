@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Contact Us</title>
+  <style>
+  
+  body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+h1 {
+  margin: 0;
+  text-align: center;
+}
+
+main {
+  padding: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin: 0 auto;
+}
+
+label {
+  margin-bottom: 5px;
+  display: block;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #45a049;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+select {
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+#like-button {
+  padding: 10px 20px;
+  background-color: #45a049;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.back a{
+  text-decoration: none;
+}
+.back{
+  float: right;
+}
+  </style>
+</head>
+<body>
+  <header><img src="logo.png" alt="PMS logo"><div class="back">
+    <button onclick="message()"><a href="home.html">HOME</a></button></div>
+   
+    <h1>Admin Contact Us</h1>
+  </header>
+
+  <main>
+    <form action="#">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone number">Phone number:</label>
+      <input type="phone number" id="phone number" name="phone number" required>
+<div class="container">
+    <select id="file-select">
+      <option value="">Select a File</option>
+      <option value="file1.txt">File 1</option>
+      <option value="file2.txt">File 2</option>
+      <option value="file3.txt">File 3</option>
+    </select>
+
+    <button id="like-button">Like</button>
+  </div>
+
+  <script src="script.js"></script>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+<hr>
+  <footer>
+    <p>&copy; 2023 <i><b>Patient management</b></i>
+  </footer>
+</body>
+</html>

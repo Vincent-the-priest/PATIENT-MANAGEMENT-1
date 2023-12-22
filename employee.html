@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>employee</title>
+    <style>
+    .employee-profile {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.employee-profile h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.employee-details,
+.employment-history,
+.certifications {
+    margin-bottom: 20px;
+}
+
+.employee-details h2,
+.employment-history h2,
+.certifications h2 {
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 5px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+header {
+  background-color: #f8f9fa;
+  padding: 20px;
+}
+
+.header-logo {
+  display: inline-block;
+}
+
+.header-logo img {
+  width: 200px;
+  height: auto;
+}
+
+.header-navigation {
+  float: right;
+}
+
+.header-navigation ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header-navigation li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.header-navigation a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.header-navigation a:hover {
+  color: #007bff;
+}
+
+section {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+section h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+section ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+section li {
+    margin-bottom: 5px;
+}
+
+section a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+.footer {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-item {
+    margin: 0 20px;
+}
+
+.footer-item h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-item ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-item li {
+    margin-bottom: 5px;
+}
+
+.footer-item a {
+    color: #333;
+    text-decoration: none;
+}
+
+.footer-copyright {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.social-media li {
+    margin: 0 5px;
+}
+
+.social-media a {
+    color: #333;
+    font-size: 20px;
+}
+    </style>
+</head>
+<body>
+<header class="header">
+    <div class="header-logo">
+      <img src="logo.png" alt="Medical System Logo">
+    </div>
+
+    <nav class="header-navigation">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="123.html">Patient</a></li>
+        <li><a href="department.html">department</a></li>
+        <li><a href="contactfull.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+    <div class="employee-profile">
+        <section class="user-profile">
+            
+            <img src="d.png" alt="User Profile Image" class="profile-image">
+            <h2><label><input type="auto"name="name" placeholder=" loading employee-name...."></label></h2>
+            <p><label><input type="auto"name="name" placeholder=" Degree or specilist...."></label></p>
+        </section>
+
+        <div class="employee-details">
+            <h2>Employee details</h2>
+            <ul>
+                <li><strong>Employee ID:</strong> <span><label><input type="atuo" name="unique" placeholder="employee id...."></label></span></li>
+                <li><strong>Full Name:</strong> <span><label><input type="atuo" name="unique" placeholder="full-name...."></span></li>
+                <li><strong>Title:</strong> <span><label><input type="atuo" name="unique" placeholder="title id...."></span></li>
+                <li><strong>Department:</strong> <span><label><input type="atuo" name="unique" placeholder="department...."></span></li>
+                <li><strong>Phone Number:</strong> <span><label><input type="atuo" name="unique" placeholder="phone...."></span></li>
+                <li><strong>Email Address:</strong> <span><label><input type="atuo" name="unique" placeholder="email...."></span></li>
+                <li><strong>Date of Hire:</strong> <span>2022-01-01</span></li>
+            </ul>
+        </div>
+
+        <div class="employment-history">
+            <h2>Employment History</h2>
+            <table class="employment-history-table">
+                <thead>
+                    <tr>
+                        <th>Start date</th>
+                        <th>patient name</th>
+                        <th>Department</th>
+                        <th>Position</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><label><input type="atuo" name="unique" placeholder="........."></td>
+                        <td><label><input type="atuo" name="unique" placeholder="........"></td>
+                        <td><label><input type="atuo" name="unique" placeholder="........"></td>
+                        <td><label><input type="atuo" name="unique" placeholder="........."></td>
+                    </tr>
+                    <tr>
+                        <td><label><input type="atuo" name="unique" placeholder="........"></td>
+                        <td><label><input type="atuo" name="unique" placeholder="........"></td>
+                        <td><label><input type="atuo" name="unique" placeholder="........"></td>
+                        <td><label><input type="atuo" name="unique" placeholder="........."></td>
+                    </tr>
+                    <tr>
+                        <td><label><input type="atuo" name="unique" placeholder="......."></td>
+                        <td><label><input type="atuo" name="unique" placeholder="......."></td>
+                        <td><label><input type="atuo" name="unique" placeholder="......"></td>
+                        <td><label><input type="atuo" name="unique" placeholder="........."></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="certifications">
+            <h2>Certifications</h2>
+            <ul>
+                <li><strong>Auto loading</strong></li>
+                <li><strong>Auto loading</strong></li>
+                <li><strong>Auto loading</strong></li>
+            </ul>
+        </div>
+    </div>
+    <hr>
+	<footer class="footer">
+        <div class="footer-content">
+            <div class="footer-item">
+                <h2>Contact us</h2>
+                <ul>
+                    <li><a href="#">Email:</a></li>
+                    <li><a href="#">Phone: +250789368709</a></li>
+                    <li><a href="#">Address:</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-item">
+                <h2>About us</h2>
+                <p>e-Healthly management Diabettes hypertensions and AIDS</p>
+            </div>
+
+            <div class="footer-item">
+                <h2>Social media</h2>
+                <ul
+ 
+class="social-media">
+
+                    
+<li><a
+ 
+href="#"><img src="face.png"><br>Facebook<i
+ 
+class="fa-brands fa-facebook"></i></a></li>
+
+                    
+<li><a
+ 
+href="#"><img src="x1.png"><br>X<i
+ 
+class="fa-brands fa-twitter"></i></a></li>
+
+                    
+<li><a
+ 
+href="#"><img src="link1.png">LinkedIn<i
+ 
+class="fa-brands fa-linkedin"></i></a></li>
+
+                
+</ul>
+
+            
+</div>
+
+        
+</div>
+
+
+        
+<div
+ 
+class="footer-copyright">
+            <p>&copy; 2023 Medical System. All rights reserved.</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

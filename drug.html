@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Drug</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 8px;
+      border: 1px solid #ddd;
+    }
+
+    table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+select {
+  width: 100%;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.info-box {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.info-box label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.info-box p {
+  margin-bottom: 0px;
+}
+.info-box {
+  background-color: #fff;
+}
+
+.info-box label {
+  color: #000;
+}
+
+.info-box p {
+  color: #333;
+}
+button {
+      background-color: #04AA6D;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    button:hover {
+      background-color: #039259;
+    }
+
+
+  </style>
+</head>
+<body>
+
+<label for="method">Select Method:</label>
+<select id="method" name="method">
+  <option value="GET">GET</option>
+  <option value="POST">POST</option>
+  <option value="PUT">PUT</option>
+  <option value="DELETE">DELETE</option>
+</select>
+
+
+  <h2>Drugs</h2>
+
+  <form>
+    <label for="startDate">Starting Date:</label>
+    <input type="date" id="startDate" name="startDate" required>
+
+    <label for="endDate">End Date:</label>
+    <input type="date" id="endDate" name="endDate" required>
+
+    <label for="patientID">Patient ID:</label>
+    <input type="number" id="patientID" name="patientID"  required>
+
+    <button type="submit">Search</button>
+  </form>
+  
+  <div class="info-box">
+  <label>Info patient:<br>
+  <input type="atuo" name="info patient" placeholder="id...."><br>
+  <input type="atuo" name="info patient" placeholder="Ntional id...."><br>
+  <input type="atuo" name="info patient" placeholder="full-name...."><br>
+  <input type="atuo" name="info patient" placeholder="....">
+  </label>
+  
+</div>
+
+
+  <table id="drugsTable">
+    <thead>
+      <tr>
+        <th>Drug Name</th>
+        <th>Starting Date</th>
+        <th>End Date</th>
+        <th>Patient ID</th>
+      </tr>
+    </thead>
+    <tbody>
+      </tbody>
+  </table>
+ <button>Add Drug</button><button>confirm</button>
+  
+</body>
+</html>

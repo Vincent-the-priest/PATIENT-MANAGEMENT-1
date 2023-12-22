@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Profile</title>
+    <style>
+    .employee-profile {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.employee-profile h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.employee-details,
+.employment-history,
+.certifications {
+    margin-bottom: 20px;
+}
+
+.employee-details h2,
+.employment-history h2,
+.certifications h2 {
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 5px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+    </style>
+</head>
+<body>
+    <div class="employee-profile">
+        <h1>Employee Profile</h1>
+
+        <div class="employee-details">
+            <h2>Employee Details</h2>
+            <ul>
+                <li><strong>Employee ID:</strong> <span><label></label></span></li>
+                <li><strong>Full Name:</strong> <span>Jane Doe</span></li>
+                <li><strong>Title:</strong> <span>Nurse</span></li>
+                <li><strong>Department:</strong> <span>Nursing</span></li>
+                <li><strong>Phone Number:</strong> <span>+1234567890</span></li>
+                <li><strong>Email Address:</strong> <span>janedoe@email.com</span></li>
+                <li><strong>Date of Hire:</strong> <span>2022-01-01</span></li>
+            </ul>
+        </div>
+
+        <div class="employment-history">
+            <h2>Employment History</h2>
+            <table class="employment-history-table">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>patient name</th>
+                        <th>Position</th>
+                        <th>Department</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2022-01-01</td>
+                        <td>Nurse</td>
+                        <td>Nursing</td>
+                    </tr>
+                    <tr>
+                        <td>2018-05-15</td>
+                        <td>Medical Assistant</td>
+                        <td>Emergency Department</td>
+                    </tr>
+                    <tr>
+                        <td>2016-07-10</td>
+                        <td>Nursing Assistant</td>
+                        <td>Pediatrics</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="certifications">
+            <h2>Certifications</h2>
+            <ul>
+                <li><strong>BLS Certification</strong></li>
+                <li><strong>ACLS Certification</strong></li>
+                <li><strong>PALS Certification</strong></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

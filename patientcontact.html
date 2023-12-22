@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patient Contact Us</title>
+  <script type="text/javascript">
+    function message(){
+      confirm("Do you need to back on home?");
+    }
+  </script>
+  <style>
+  body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+h1 {
+  margin: 0;
+  text-align: center;
+}
+
+main {
+  padding: 20px;
+}
+
+.contact-info {
+  margin-bottom: 40px;
+}
+
+.contact-details {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-details li {
+  margin-bottom: 10px;
+}
+
+.contact-details a {
+  color: #45a049;
+  text-decoration: none;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin: 0 auto;
+}
+
+label {
+  margin-bottom: 5px;
+  display: block;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #45a049;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #f2f2f2;
+  padding: 
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+select {
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+#like-button {
+  padding: 10px 20px;
+  background-color: #45a049;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.back a{
+  text-decoration: none;
+}
+.back{
+  float: right;
+}
+
+  </style>
+</head>
+<body>
+  <header><nav><div>
+    <div class="back"><button onclick="message()"><a href="home.html">HOME</a></button></div>
+    <img src="logo.png" alt="PMS logo"></div>
+    <div>
+    <h1>Method contact to patient</h1></div>
+  </header>
+</nav>
+  <main>
+    <section class="contact-info">
+      <h2>Institution information</h2>
+      <p>For any questions or concerns, please feel free to reach out to us using the following methods:</p>
+
+      <ul class="contact-details">
+        <li><i class="fas fa-envelope"></i> <a href="mailto:patientcare@example.com">Institution @email</a></li>
+        <li><i class="fas fa-phone"></i> <a href="+0250791231619">CALL</a></li>
+        <li><i class="fas fa-map-marker-alt"></i> <a href="#">KIGALI - RWANDA</a></li>
+      </ul>
+
+      <p>Our patient service hours are:</p>
+      <ul>
+        <li>Monday-Friday: 7:00 AM - 5:00 PM PST</li>
+        <li>Saturday: 8:00 AM - 15:00 PM PST</li>
+        <li>Sunday: 9:00 AM - 1 :00 PM</li>
+      </ul>
+    </section>
+
+    <section class="contact-form">
+      <h2>Contact Form</h2>
+      <p>Please fill out the form below to send us a message. We will respond to your inquiry as soon as possible.</p>
+
+      <form action="#">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="phone">Phone Number (Optional):</label>
+        <input type="tel" id="phone" name="phone">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="3" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+  <hr>
+
+  <footer><center>
+    <p>&copy; 2023 <i><b>PATIENT MANAGEMENT</b></i></p></center>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        th {
+            text-align: left;
+            background-color: #f1f1f1;
+        }
+
+        .total {
+            font-weight: bold;
+            border-top: 2px solid #ddd;
+        }
+
+        .payment-source {
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .payment-methods {
+    margin: 20px 0;
+    display: center;
+}
+
+.payment-methods h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.payment-methods ul {
+    list-style: none;
+    padding: 0;
+}
+
+.payment-methods li {
+    margin-bottom: 5px;
+}
+
+.payment-methods input[type="radio"] {
+    margin-right: 5px;
+}
+
+.payment-details {
+    display: none;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.payment-details h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.payment-details label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.payment-details input[type="text"],
+.payment-details input[type="number"] {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.payment-details button {
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#credit-card-details {
+    display: block;
+}
+    </style>
+</head>
+<body>
+
+    <h2>Payment Service</h2>
+    <p><strong>Patient:</strong> <input type="text" name="....."></p>
+    <p><strong>Date:</strong> <input type="text" name="....."></p>
+
+    <h3>Services</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Service</th>
+                <th>Description</th>
+                <th>Cost</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input type="text" name="....."></td>
+                <td><input type="text" name="....."></td>
+                <td><input type="text" name="....."></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="....."></td>
+                <td><input type="text" name="....."></td>
+                <td><input type="text" name="....."></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="....."></td>
+                <td><input type="text" name="....."></td>
+                <td><input type="text" name="....."></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="....."></td>
+                <td><input type="text" name="....."></td>
+                <td><input type="text" name="....."></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="....."></td>
+                <td><input type="text" name="....."></td>
+                <td><input type="text" name="....."></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="....."></td>
+                <td><input type="text" name="....."></td>
+                <td><input type="text" name="....."></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="....."></td>
+                <td><input type="text" name="....."></td>
+                <td><input type="text" name="....."></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="....."></td>
+                <td><input type="text" name="....."></td>
+                <td><input type="text" name="....."></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="....."></td>
+                <td><input type="text" name="....."></td>
+                <td><input type="text" name="....."></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th class="total" colspan="2"><input type="button" value="General-sum">  <input type="auto" name=".....">
+                <input type="button" value="On mituelle">  <input type="text" name="....."><br>
+                <input type="button" value="On- RAMA">  <input type="text" name="....."></th>
+                <td class="total">
+            </tr>
+        </tfoot>
+    </table>
+    <div class="payment-methods">
+        <h2>Choose your payment method:</h2>
+        <ul>
+            <li>
+                <label for="credit-card">
+                    <input type="radio" name="payment_method" id="credit-card" value="credit_card" checked>
+                    Credit Card
+                </label>
+            </li>
+            <li>
+                <label for="debit-card">
+                    <input type="radio" name="payment_method" id="debit-card" value="debit_card">
+                    Debit Card
+                </label>
+            </li>
+
+            <li>
+                <label for="paypal">
+                    <input type="radio" name="payment_method" id="paypal" value="paypal">
+                    PayPal
+                </label>
+            </li>
+            <li>
+                <label for="Mobile-money">
+                    <input type="radio" name="payment_method" id="Mobile-money" value="MTN Mobile-money">
+                    MTN Mobile-money
+                </label>
+            </li>
+        </ul>
+    
+        <div id="credit-card-details" class="payment-details">
+            <h3>Credit Card Information</h3>
+            <label for="card-number">Card Number:</label>
+            <input type="text" id="card-number" name="card_number" required>
+            <label for="card-name">Name on Card:</label>
+            <input type="text" id="card-name" name="card_name" required>
+            <label for="exp-month">Expiration Month:</label>
+            <input type="number" id="exp-month" name="exp_month" min="1" max="12" required>
+            <label for="exp-year">Expiration Year:</label>
+            <input type="number" id="exp-year" name="exp_year" required>
+            <label for="cvv">CVV:</label>
+            <input type="number" id="cvv" name="cvv" required>
+            <div id="credit-card-details" class="payment-details">
+                <label for="card-number">Phone-number:</label>
+                <input type="text" id="card-number" name="card_number" required>
+                <label for="card-name">Company-name:</label>
+                <input type="text" id="card-name" name="card_name" required>
+                
+            </div>
+            <button type="submit">Pay Now</button>
+        </div>
+        <hr><center>
+        <footer>
+            &copy;2023 Patient management.
+        </footer></center>
+    </body>
+    </html>
+    
+ 

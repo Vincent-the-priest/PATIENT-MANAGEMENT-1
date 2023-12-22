@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Payment Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+    font-family: sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    margin: 0 auto;
+    width: 50%;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#payment-result {
+    font-weight: bold;
+}
+
+    </style>
+</head>
+<body>
+    <h1>Hospital Payment Calculator</h1>
+    <form id="payment-form">
+        <label for="lab-tests">Lab Tests:</label>
+        <input type="auto" id="lab-tests" name="lab_tests" min="0">
+        
+        <br>
+        <label for="medications">Medications:</label>
+        <input type="auto" id="medications" name="medications" min="0">
+        <br>
+        <label for="x-rays">X-rays:</label>
+        <input type="auto" id="x-rays" name="x_rays" min="0">
+        <br>
+        <label for="consultations">Consultations:</label>
+        <input type="auto" id="consultations" name="consultations" min="0" >
+        <br>
+        <button type="button" onclick="calculatePayment()">Calculate Payment</button>
+    </form>
+    <br>
+    <p id="payment-result"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
